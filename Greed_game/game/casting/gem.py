@@ -1,7 +1,7 @@
 from game.casting.actor import Actor
 
 
-class Artifact(Actor):
+class Gem(Actor):
     """
     An item of cultural or historical interest. 
     
