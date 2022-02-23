@@ -74,7 +74,7 @@ class Cast:
         if group in self._actors:
             self._actors[group].remove(actor)
 
-from Greed_game.game.casting.actor import Actor
+from game.casting.actor import Actor
 
 class Rock(Actor):
     """
