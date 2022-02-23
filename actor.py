@@ -1,7 +1,8 @@
+from pygame import Rect
 from color import Color
 from point import Point
-
-
+import pyray
+import pygame
 class Actor:
 
     def __init__(self):
@@ -23,7 +24,8 @@ class Actor:
     def get_position(self):
         # Gets the position of the object or person.
         return self._position
-    
+    def create_rect(self,object):
+        return pyray.Rectangle(object.get_position().get_x(),object.get_position().get_y(),12,12)
     def get_text(self):
         # Get the text of the object or player.
         return self._text

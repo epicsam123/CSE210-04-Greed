@@ -1,7 +1,8 @@
 import os
 import random
-os.environ["RAYLIB_BIN_PATH"] = "raylib-2.0.0-Win64-mingw/lib/"
-from raylibpy import *
+import pyray
+
+
 
 from actor import Actor
 from object import Object

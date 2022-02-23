@@ -1,6 +1,5 @@
-import os
-os.environ["RAYLIB_BIN_PATH"] = "raylib-2.0.0-Win64-mingw/lib/"
-from raylibpy import *
+
+import pyray
 from point import Point
 
 
@@ -13,16 +12,16 @@ class KeyboardService:
         dx = 0
         dy = 0
 
-        if is_key_down(KEY_LEFT):
-            dx = -.5
+        if pyray.is_key_down(pyray.KEY_LEFT):
+            dx = -1
         
-        if is_key_down(KEY_RIGHT):
-            dx = .5
+        if pyray.is_key_down(pyray.KEY_RIGHT):
+            dx = 1
         
-        if is_key_down(KEY_UP):
+        if pyray.is_key_down(pyray.KEY_UP):
             dy = 0
         
-        if is_key_down(KEY_DOWN):
+        if pyray.is_key_down(pyray.KEY_DOWN):
             dy = 0
 
         direction = Point(dx, dy)
