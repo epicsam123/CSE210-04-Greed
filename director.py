@@ -1,7 +1,10 @@
 from object import Object
 from point import Point
+from actor import Actor
 import random
+import pyray
 from color import Color
+
 CELL_SIZE = 15
 COLS = 60
 ROWS = 40
@@ -48,7 +51,9 @@ class Director:
         robot.move_next(max_x, max_y)
         
         for objects in object:
-            if robot.get_position().equals(objects.get_position()):
+            rect1 = robot.create_rect(robot)
+            rect2 = objects.create_rect(objects)
+            if pyray.check_collision_recs(rect1,rect2):
                 cast.remove_actor("objects",objects)
                 character = objects.get_text()
                 text = self._score.set_score(character)
