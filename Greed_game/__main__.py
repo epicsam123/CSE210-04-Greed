@@ -1,9 +1,10 @@
 import os
 import random
 
+from game.casting.cast import Cast
 from game.casting.actor import Actor
 from game.casting.gem import Gem
-from game.casting. import Rock
+from game.casting.rock import Rock
 
 from game.directing.director import Director
 
@@ -53,9 +54,9 @@ def main():
     cast.add_actor("robots", robot)
     
     # create the artifacts
-    with open(DATA_PATH) as file:
-        data = file.read()
-        messages = data.splitlines()
+    # with open(DATA_PATH) as file:
+    #     data = file.read()
+    #     messages = data.splitlines()
 
     for n in range(DEFAULT_ARTIFACTS):
         text = chr(random.randint(33, 126))
