@@ -1,8 +1,6 @@
-from pygame import Rect
 from color import Color
 from point import Point
 import pyray
-import pygame
 class Actor:
 
     def __init__(self):

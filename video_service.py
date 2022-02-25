@@ -1,5 +1,5 @@
 import os
-os.environ["RAYLIB_BIN_PATH"] = "raylib-2.0.0-Win64-mingw/lib/"
+os.environ["PYRAY_BIN_PATH"] = "./pyray"
 import pyray
 
 

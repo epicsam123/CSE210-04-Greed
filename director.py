@@ -1,6 +1,6 @@
 from object import Object
 from point import Point
-from actor import Actor
+#from actor import Actor
 import random
 import pyray
 from color import Color

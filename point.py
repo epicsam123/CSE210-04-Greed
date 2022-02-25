@@ -1,5 +1,4 @@
 #from object import Object
-import random
 
 class Point:
     """A distance from a relative origin (0, 0).

@@ -12,7 +12,7 @@ class Object(Actor):
         self._speed = random.randint(1,3)
     def move_next(self, max_x, max_y):
         x = (self._position.get_x()) % max_x
-        y = (self._position.get_y() + self._speed)
+        y = (self._position.get_y() + self._speed) 
         self._position = Point(x, y)
     def set_score(self,character): 
         if character == "*":
