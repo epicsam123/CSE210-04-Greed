@@ -5,10 +5,9 @@
 - Video service
 - Keyboard Service
 - Actor
--   Player (inherits actor)
--   Gem (inherits actor)
--   Rock (inherits actor)
+-   Object (inherits actor)
 - Color 
 - Point
+- Cast
 
 
