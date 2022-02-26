@@ -7,10 +7,12 @@ class Object(Actor):
     The responsibility of an Object is to provide a score, the speed of the object, and have the objects move.
     """
     def __init__(self):
+        #Inheritance - Initialize generic actor states
         super().__init__()
         self._score = 0
         self._speed = random.randint(1,3)
     def move_next(self, max_x, max_y):
+        #Update the position of the object
         x = (self._position.get_x()) % max_x
         y = (self._position.get_y() + self._speed) % max_y
         self._position = Point(x, y)
