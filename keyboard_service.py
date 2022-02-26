@@ -9,8 +9,8 @@ class KeyboardService:
         self._cell_size = cell_size
 
     def get_direction(self):
-        #Detect any keypresses
-        dx = 0
+        #Look for any keypresses
+        dx = 0 
         dy = 0
 
         if pyray.is_key_down(pyray.KEY_LEFT):
