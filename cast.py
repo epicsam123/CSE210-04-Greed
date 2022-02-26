@@ -19,18 +19,21 @@ class Cast:
             self._actors[group].append(actor)
 
     def get_actors(self, group):
+        #gets all instances of an actor in a specific group
         results = []
         if group in self._actors.keys():
             results = self._actors[group].copy()
         return results
     
     def get_all_actors(self):
+        #returns all instances of actor
         results = []
         for group in self._actors:
             results.extend(self._actors[group])
         return results
 
     def get_first_actor(self, group):
+        #returns the first instance of actor in a particular group
         result = None
         if group in self._actors.keys():
             result = self._actors[group][0]

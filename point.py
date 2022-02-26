@@ -31,4 +31,5 @@ class Point:
         return self._y
 
     def scale(self, factor):
+        #Scales according to the window
         return Point(self._x * factor, self._y * factor)

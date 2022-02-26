@@ -9,6 +9,7 @@ class KeyboardService:
         self._cell_size = cell_size
 
     def get_direction(self):
+        #Detect any keypresses
         dx = 0
         dy = 0
 

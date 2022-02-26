@@ -12,9 +12,10 @@ class Object(Actor):
         self._speed = random.randint(1,3)
     def move_next(self, max_x, max_y):
         x = (self._position.get_x()) % max_x
-        y = (self._position.get_y() + self._speed) 
+        y = (self._position.get_y() + self._speed) % max_y
         self._position = Point(x, y)
     def set_score(self,character): 
+        #Add or subtract the score if the player hits a rock or a gem
         if character == "*":
             self._score+=1
         else:

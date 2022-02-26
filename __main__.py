@@ -1,5 +1,4 @@
 import random
-import pyray
 
 
 from actor import Actor

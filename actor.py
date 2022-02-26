@@ -2,6 +2,7 @@ from color import Color
 from point import Point
 import pyray
 class Actor:
+    #Any moving or stationary object on the screen
 
     def __init__(self):
         # What each actor has, create new actor.
@@ -23,6 +24,7 @@ class Actor:
         # Gets the position of the object or person.
         return self._position
     def create_rect(self,object):
+        #Create hitboxes
         return pyray.Rectangle(object.get_position().get_x(),object.get_position().get_y(),12,12)
     def get_text(self):
         # Get the text of the object or player.

@@ -1,5 +1,5 @@
 import os
-os.environ["PYRAY_BIN_PATH"] = "./pyray"
+os.environ["PYRAY_BIN_PATH"] = "pyray"
 import pyray
 
 
